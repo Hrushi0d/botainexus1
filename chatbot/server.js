@@ -11,10 +11,11 @@ app.use(express.json());
 app.post('/ask', (req, res) => {
   const question = req.body.question;
 
-  const url = "https://ainexusbot101.cognitiveservices.azure.com/language/:query-knowledgebases?projectName=ainexusbot&api-version=2021-10-01&deploymentName=production";
-
+  // const url = "https://ainexusbot101.cognitiveservices.azure.com/language/:query-knowledgebases?projectName=ainexusbot&api-version=2021-10-01&deploymentName=production";
+  const url = "https://ainexusbot102.cognitiveservices.azure.com/language/:query-knowledgebases?projectName=ainexusbot&api-version=2021-10-01&deploymentName=test";
+  
   const headers = {
-    "Ocp-Apim-Subscription-Key": "VHw2UOnLBzkaXXhamAF3FVlJyg7dru32pgWnbwipHCSg61RHRJ7eJQQJ99BAACYeBjFXJ3w3AAAaACOGZ4Gt",
+    "Ocp-Apim-Subscription-Key": "C8YNEdDmbczDAHOaLVXctvjkV5q70Ze5VJTdGqV6FOCXmGlM46nBJQQJ99BAACYeBjFXJ3w3AAAaACOGVHyG",
     "Content-Type": "application/json"
   };
 
