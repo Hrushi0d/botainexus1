@@ -252,3 +252,34 @@
       max-width: 90%;
     }
   }
+
+
+  .keywords {
+    margin-top: 0.5rem;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+  }
+  
+  .keyword-button {
+    padding: 0.5rem 1rem;
+    background: var(--primary-red);
+    border: none;
+    border-radius: 8px;
+    color: var(--light-text);
+    font-size: 0.9rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+  }
+  
+  .keyword-button:hover {
+    transform: translateY(-3px);
+    box-shadow: var(--border-glow);
+  }
+  
+  .keyword-button:active {
+    transform: translateY(0);
+    box-shadow: none;
+  }
+  

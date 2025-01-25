@@ -34,9 +34,9 @@ app.post('/ask', (req, res) => {
   axios.post(url, body, { headers })
     .then(response => {
       // Extract the answer from the response
-      console.log(response.data.answers[0].dialog.prompts) ;
+      const prompts = response.data.answers[0].dialog.prompts ;
       const answer = response.data.answers[0].answer;
-      res.json({ answer });
+      res.json({ answer , prompts});
     })
     .catch(error => {
       console.error("Error:", error.response ? error.response.data : error.message);
